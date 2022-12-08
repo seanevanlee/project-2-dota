@@ -3,6 +3,7 @@ const passport = require("passport");
 
 // The root route renders our only view
 router.get("/", function (req, res) {
+  console.log("root starting");
   res.redirect("/index");
 
   //UPDATE THIS
@@ -22,7 +23,7 @@ router.get(
 router.get(
   "/oauth2callback",
   passport.authenticate("google", {
-    successRedirect: "/", // UPDATE THIS, where do you want the client to go after you login
+    successRedirect: "/heroes/index", // UPDATE THIS, where do you want the client to go after you login
     failureRedirect: "/", //  UPDATE THIS, where do you want the client to go if login fails
   })
 );
