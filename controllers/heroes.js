@@ -5,6 +5,7 @@ function index(req, res) {
   console.log(req.user);
   res.render("heroes/index");
 }
-// module.exports = {
-//   show,
-// };
+module.exports = {
+  show,
+  index,
+};

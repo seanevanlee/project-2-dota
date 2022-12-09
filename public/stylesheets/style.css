@@ -18,3 +18,21 @@
 .collection-item form {
   margin-top: -5px;
 }
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+}
+
+.login img {
+  height: 30px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+}

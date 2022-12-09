@@ -1,12 +1,40 @@
-<%- include('../partials/header') %>
+<!-- <%- include('../partials/header') %> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Choose Your Character</title>
   </head>
-  <body></body>
+  <body>
+    <% if (user) { %>
+    <h2>Thanks for contributing to the Dota community!!</h2>
+    <% } %>
+    <div
+      style="
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <ul style="list-style: none">
+        <li>
+          <button onclick="redirect('/heroes/character1')">
+            Legion Commander
+          </button>
+        </li>
+        <li>
+          <button onclick="redirect('/heroes/character2')">Lina</button>
+        </li>
+        <li>
+          <button onclick="redirect('/heroes/character3')">Necrophos</button>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
 <%- include('../partials/footer') %>

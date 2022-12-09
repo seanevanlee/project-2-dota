@@ -9,3 +9,12 @@ https://i.imgur.com/zvlKNNR.png
 
 DOTA2 LOGO:
 https://i.imgur.com/NK6Ofjs.jpg
+
+LEGION COMMANDER PIC:
+https://i.imgur.com/5Djp9we.png
+
+LINA PIC:
+https://i.imgur.com/bIXRkPF.png
+
+NECRO PIC:
+https://i.imgur.com/W1eWUx3.png

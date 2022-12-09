@@ -1,12 +1,39 @@
-<%- include('../partials/header') %>
+<!-- <%- include('../partials/header') %> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Your Next Dota Hero?</title>
   </head>
-  <body></body>
+  <body>
+    <div
+      id="hero-container"
+      style="height: 20vh; width: 100vw; display: flex; background-color: aqua"
+    ></div>
+    <div
+      id="form-container"
+      style="height: 40vh; width: 100vw; display: flex; background-color: blue"
+    >
+      <form action="addComment/<%-id-%>">
+        <label for="comments"></label>
+        <input id="comments" name="comments" type="text" />
+        <button type="submit">Share Your Opinion</button>
+      </form>
+    </div>
+    <div
+      id="comments-container"
+      style="
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        background-color: brown;
+      "
+    ></div>
+    <%- id -%>
+  </body>
 </html>
-<%- include('../partials/footer') %>
+<!-- <%- include('../partials/footer') %> -->

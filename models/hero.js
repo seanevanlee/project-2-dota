@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const heroSchema = new Schema({
   name: {
     type: String,
+    enum: ["Legion Commander", "Lina", "Necrophos"],
     required: true,
   },
 });
