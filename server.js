@@ -49,7 +49,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-// mount all routes with appropriate base paths
+// mount all routes with appropriate base paths, DOTA2 Homepage and other links
 app.use("/", indexRoutes);
 app.use("/heroes", heroesRouter);
 app.use("/reviews", reviewsRouter);

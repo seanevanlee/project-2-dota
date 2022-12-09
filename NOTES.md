@@ -10,11 +10,14 @@ https://i.imgur.com/zvlKNNR.png
 DOTA2 LOGO:
 https://i.imgur.com/NK6Ofjs.jpg
 
-LEGION COMMANDER PIC:
+LEGION COMMANDER PIC/AUDIO:
 https://i.imgur.com/5Djp9we.png
+https://www.mboxdrive.com/legion-commander.mp3
 
-LINA PIC:
+LINA PIC/AUDIO:
 https://i.imgur.com/bIXRkPF.png
+https://www.mboxdrive.com/lina.mp3
 
-NECRO PIC:
+NECRO PIC/AUDIO:
 https://i.imgur.com/W1eWUx3.png
+https://www.mboxdrive.com/necrophos.mp3
