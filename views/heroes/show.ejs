@@ -12,12 +12,14 @@
     <div
       id="hero-container"
       style="height: 20vh; width: 100vw; display: flex; background-color: aqua"
-    ></div>
+    >
+      Name: <%- hero.name -%>
+    </div>
     <div
       id="form-container"
       style="height: 40vh; width: 100vw; display: flex; background-color: blue"
     >
-      <form action="addComment/<%-id-%>">
+      <form action="/reviews" method="POST">
         <label for="comments"></label>
         <input id="comments" name="comments" type="text" />
         <button type="submit">Share Your Opinion</button>
@@ -33,7 +35,6 @@
         background-color: brown;
       "
     ></div>
-    <%- id -%>
   </body>
 </html>
 <!-- <%- include('../partials/footer') %> -->
