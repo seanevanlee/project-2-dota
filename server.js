@@ -56,7 +56,7 @@ app.use("/reviews", reviewsRouter);
 
 // invalid request, send 404 page
 app.use(function (req, res) {
-  res.status(404).send("Dota is nowhere to be found! Can't find that.");
+  res.status(404).send("Dota player not found!");
 });
 
 module.exports = app;
