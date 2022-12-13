@@ -34,9 +34,6 @@ This provided a lot of the text you see on the page ranging from anything to the
 ---
 
 CSS:
-
----
-
 Like any website, it's better when the site is easier on the eyes. The CSS here helps size images to scale proportionately to the scrolling as well as sets up the website in sections.
 
 ---
