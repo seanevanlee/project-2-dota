@@ -9,11 +9,9 @@
   </head>
   <body>
     <nav>
-      <!-- <img class="logo" src="https://i.imgur.com/NK6Ofjs.jpg" /> -->
       <div id="nav-container">
         <a href="/heroes">ALL HEROES</a>
         <% if (user) { %>
-        <!-- <a href="/reviews/new"> ADD HERO REVIEW</a> -->
         <a href="/logout">LOGOUT AND GO PLAY!</a>
         <% } else { %>
         <a href="/auth/google" class="login"

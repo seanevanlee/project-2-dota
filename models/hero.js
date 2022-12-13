@@ -18,13 +18,9 @@ const reviewSchema = new Schema(
 const heroSchema = new Schema({
   name: {
     type: String,
-    //enum: ["Legion Commander", "Lina", "Necrophos"],
     required: true,
-    // unique: true,
-    // TODO: revisit this later.
   },
   heroDescription: String,
-  // heroImage: String,
   user: { type: Schema.Types.ObjectId, ref: "User", required: true },
   // Embedding the reviews into a hero.
   reviews: [reviewSchema],

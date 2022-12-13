@@ -48,9 +48,14 @@ async function update(req, res) {
 
   await hero.save();
 
-  // // res.send("Hero created successfully.");
+  // res.send("Hero created successfully.");
   res.redirect(`/heroes/${req.body.hero}`);
 }
+
+// edit comment
+// function editReview(req, res) {
+//   res.render("/heroes/edit", { hero: req.params.id });
+// }
 
 module.exports = {
   create,

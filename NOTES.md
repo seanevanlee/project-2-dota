@@ -4,20 +4,22 @@ Read: Being able to READ everyone else's comments
 Update: When your opinion changes, being able to UPDATE your review
 Delete: When your opinion is no longer valid, being able to DELETE it
 
+Trello:
+https://trello.com/b/PUyeRYIZ/wireframes
+
 ERD:
 https://i.imgur.com/zvlKNNR.png
 
 DOTA2 LOGO:
 https://i.imgur.com/NK6Ofjs.jpg
 
-LEGION COMMANDER PIC/AUDIO:
-https://i.imgur.com/5Djp9we.png
-https://www.mboxdrive.com/legion-commander.mp3
+HOME:
+https://i.imgur.com/OuqQess.png
 
-LINA PIC/AUDIO:
-https://i.imgur.com/bIXRkPF.png
-https://www.mboxdrive.com/lina.mp3
+HOME LOGGED IN:
+https://i.imgur.com/eVUhd9Z.png
 
-NECRO PIC/AUDIO:
-https://i.imgur.com/W1eWUx3.png
-https://www.mboxdrive.com/necrophos.mp3
+HEROES:
+https://i.imgur.com/LAOkayy.png
+
+HERO PROFILE:
