@@ -1,6 +1,6 @@
 # APP TITLE:
 
-DOTA2 HERO GUIDE:
+DOTA2 HERO GUIDE!
 
 # Game-link:
 
