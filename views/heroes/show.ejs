@@ -27,9 +27,64 @@
     </div>
     <div id="comments-container">
       <% hero.reviews.forEach(function(review) { %>
-      <small><%- review.user.name -%></small>
+      <large><%- review.user.name -%></large>
       <p><%- review.reviewInfo -%></p>
       <div>Would I play the hero again? <%- review.playAgain -%></div>
+
+      <div>
+        <% if (user && user._id.equals(review.user._id)) { %>
+
+        <button id="review-<%= review._id %>-edit-button">Edit</button>
+
+        <form
+          id="review-<%= review._id %>-edit-form"
+          class="hidden"
+          action="/reviews/<%= review._id %>?_method=PUT"
+          method="POST"
+        >
+          <label for="comments"></label>
+          <input name="hero" value="<%- hero.id -%>" type="hidden" />
+          <textarea id="comments" name="reviewInfo" type="text">
+<%- review.reviewInfo -%></textarea
+          >
+          <label>
+            Would you play this hero again?
+            <select name="playAgain">
+              <option value="Definitely!" <%- review.playAgain == "Definitely!" ? "selected" : "" -%>>Definitely!</option>
+              <option value="Nope!" <%- review.playAgain == "Nope!" ? "selected" : "" -%>>Nope!</option>
+            </select>
+          </label>
+          <button type="submit">Save</button>
+        </form>
+
+        <script>
+          {
+            const editButton = document.querySelector(
+              `#review-<%= review._id %>-edit-button`
+            );
+
+            editButton.onclick = () => {
+              document
+                .querySelector(`#review-<%= review._id %>-edit-form`)
+                .classList.remove("hidden");
+
+              editButton.classList.add("hidden");
+            };
+          }
+        </script>
+
+        <form
+          id="review-<%= review._id %>"
+          action="/reviews/<%= review._id %>?_method=DELETE"
+          method="POST"
+        >
+          <input name="hero" value="<%- hero.id -%>" type="hidden" />
+          <button type="submit">X</button>
+        </form>
+
+        <% } %>
+      </div>
+
       <% }); %>
     </div>
   </body>

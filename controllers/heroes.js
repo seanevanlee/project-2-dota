@@ -31,10 +31,9 @@ async function show(req, res) {
     })
     .exec();
 
-  console.log("result: ", hero);
-
   // 2. Render the data
   res.render("heroes/show.ejs", {
+    user: req.user,
     hero: hero,
   });
 }
