@@ -20,7 +20,16 @@ async function show(req, res) {
   //res.locals.id = req.params.id;
 
   // 1. Get the data from the database
-  const hero = await Hero.findById(req.params.id).exec();
+  const hero = await Hero.findById(req.params.id)
+    // Populate the hero's reviews' user properties with actual user data
+    .populate({
+      path: "reviews",
+      populate: {
+        path: "user",
+        model: "User",
+      },
+    })
+    .exec();
 
   console.log("result: ", hero);
 

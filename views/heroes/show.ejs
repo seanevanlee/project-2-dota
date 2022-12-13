@@ -25,7 +25,13 @@
         <button type="submit">Share Your Opinion</button>
       </form>
     </div>
-    <div id="comments-container"></div>
+    <div id="comments-container">
+      <% hero.reviews.forEach(function(review) { %>
+      <small><%- review.user.name -%></small>
+      <p><%- review.reviewInfo -%></p>
+      <div>Would I play the hero again? <%- review.playAgain -%></div>
+      <% }); %>
+    </div>
   </body>
 </html>
 <%- include('../partials/footer') %>
