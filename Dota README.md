@@ -24,20 +24,38 @@ Video games are a bigger industry than movies and North American sports combined
 
 ![HEROES](https://i.imgur.com/LAOkayy.png)
 
-![INDIVIDUAL HERO PAGE](imgur link here)
+![INDIVIDUAL HERO PAGE](https://i.imgur.com/i33IwpK.png)
 
 # Technologies Used:
 
 HTML:
 This provided a lot of the text you see on the page ranging from anything to the text in the browser's tab to the various forms where you can input data.
+
+---
+
 CSS:
+
+---
+
 Like any website, it's better when the site is easier on the eyes. The CSS here helps size images to scale proportionately to the scrolling as well as sets up the website in sections.
+
+---
+
 JS:
 We have to define when approproriate and also add meaningful descriptions for our variables.
+
+---
+
 EJS:
 EJS helps set up the website's routes. From the index, we can go one path deeper into the hero page and another step more to an individual hero's information on the show page.
+
+---
+
 MongoDB:
 This is the database used.
+
+---
+
 Google OAuth:
 Without logging in, the user can't see much on the page and that is thanks to OAuth to keep the privileged information secure.
 
