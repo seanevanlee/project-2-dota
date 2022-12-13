@@ -10,28 +10,23 @@
   </head>
   <body>
     <% if (user) { %>
-    <h2><div style =
-      text-align:center;>
+    <h2><div id="youtube-link">
       <a
         href="https://www.youtube.com/watch?v=ghHC3JzdWK0&list=RDghHC3JzdWK0&start_radio=1&ab_channel=sLW"
       >
         Thanks for contributing to the Dota community!!</a
       >
     </h2></div>
+    <% } else { %>
+<h2>    <div id="reminder-container">
+  Please remember to log in!</h2>
     <% } %>
-    <div
-      style="
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      "
-    >
+    <% if (user) { %>
+
+    <div id="login-reminder">
       <h2>Add a Hero</h2>
       <form action="/heroes" method="POST">
         <label>
-          <!-- Name -->
           <input type="text" name="name" />
         </label>
 
@@ -49,6 +44,8 @@
        
       </ul>
     </div>
+    <% } else { %>
+      <% } %>
   </body>
 </html>
 <%- include('../partials/footer') %>

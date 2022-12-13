@@ -3,10 +3,13 @@ const Hero = require("../models/hero");
 const User = require("../models/user");
 
 async function index(req, res) {
-  console.log(req.user);
+  console.log("req.user: ", req.user);
 
   // 1. Get the heroes from the database
-  const heroes = await Hero.find({});
+  const heroes = await Hero.find({
+    // The filter to isolate a person's heroes
+    //  user: req.user,
+  });
 
   // 2. Render the heroes
   res.render("heroes/index", { heroes: heroes });
@@ -30,7 +33,7 @@ async function show(req, res) {
 async function create(req, res) {
   // req.body.name comes from the form.
   // It's the value the user entered in the <input> with name="name".
-  await Hero.create({ name: req.body.name });
+  await Hero.create({ name: req.body.name, user: req.user });
 
   // res.send("Hero created successfully.");
   res.redirect("/heroes");

@@ -1,3 +1,4 @@
+<title>Your Next Dota Hero?</title>
 <%- include('../partials/header') %>
 <!DOCTYPE html>
 <html lang="en">
@@ -6,18 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
-    <title>Your Next Dota Hero?</title>
   </head>
   <body>
     <div id="hero-container">Name: <%- hero.name -%></div>
     <div id="form-container">
       <form action="/reviews" method="POST">
         <label for="comments"></label>
-        <input id="comments" name="comments" type="text" />
+        <input name="hero" value="<%- hero.id -%>" type="hidden" />
+        <textarea id="comments" name="reviewInfo" type="text"></textarea>
+        <label>
+          Would you play this hero again?
+          <select name="playAgain">
+            <option value="Definitely!">Definitely!</option>
+            <option value="Nope!">Nope!</option>
+          </select>
+        </label>
         <button type="submit">Share Your Opinion</button>
       </form>
     </div>
     <div id="comments-container"></div>
   </body>
 </html>
-<!-- <%- include('../partials/footer') %> -->
+<%- include('../partials/footer') %>

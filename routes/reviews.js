@@ -11,4 +11,8 @@ const reviews = require("../controllers/reviews");
 // router.put("/reviews/:id", reviewsCtrl.update);
 // router.delete("reviews/:id/", reviewsCtrl.delete);
 
+// router.get("/:id", isLoggedIn, reviewsCtrl.show);
+router.post("/", isLoggedIn, reviewsCtrl.create);
+// router.delete("/:id", isLoggedIn, reviewsCtrl.delete);
+
 module.exports = router;
