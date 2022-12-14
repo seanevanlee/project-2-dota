@@ -52,11 +52,6 @@ async function update(req, res) {
   res.redirect(`/heroes/${req.body.hero}`);
 }
 
-// edit comment
-// function editReview(req, res) {
-//   res.render("/heroes/edit", { hero: req.params.id });
-// }
-
 module.exports = {
   create,
   delete: deleteReview,
